@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Problema dos Interruptores e Lâmpadas</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        h1 {
+            color: #2c3e50;
+        }
+        p {
+            font-size: 18px;
+        }
+        .solucao {
+            background-color: #f0f0f0;
+            padding: 10px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Problema dos Interruptores e Lâmpadas</h1>
+    <p>Você está em uma sala com três interruptores, cada um conectado a uma lâmpada em salas diferentes. Você não pode ver as lâmpadas da sala em que está, mas pode ligar e desligar os interruptores quantas vezes quiser. Seu objetivo é descobrir qual interruptor controla qual lâmpada, usando apenas duas idas até a sala das lâmpadas.</p>
+
+    <div class="solucao">
+        <h2>Solução</h2>
+        <ol>
+            <li>Chame os interruptores de A, B e C, e as lâmpadas correspondentes de 1, 2 e 3.</li>
+            <li>Ligue o interruptor A e deixe-o ligado por alguns minutos (tempo suficiente para aquecer a lâmpada).</li>
+            <li>Desligue o interruptor A e ligue o interruptor B.</li>
+            <li>Agora, vá até a sala das lâmpadas e observe:
+                <ul>
+                    <li>A lâmpada que estiver acesa está conectada ao interruptor B.</li>
+                    <li>A lâmpada que estiver apagada, mas quente, está conectada ao interruptor A.</li>
+                    <li>A lâmpada que estiver apagada e fria está conectada ao interruptor C.</li>
+                </ul>
+            </li>
+        </ol>
+        <p>Com essa estratégia, você consegue descobrir qual interruptor controla qual lâmpada com apenas uma ida à sala das lâmpadas.</p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt=BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vamos verificar a letra "A"</title>
+</head>
+<body>
+    <h1>Vamos verificar a existencia da letra 'A' ou 'a'</h1>
+
+    <label for="entrada">Informe uma string:</label>
+    <input type="text" id="entrada" placeholder="Digite uma frase ou palavra">
+    <button onclick="verificarLetraA()">Verificar</button>
+
+    <p id="Resultado"></p> // Aqui e onde o resultado sera mostrado
+
+    <script>
+        function verificarLetraA() {
+          // Aqui obtem o valor de entrada
+          let str = document.getElementById('entrada').value;
+
+          // O nosso contador de A's
+          let count = 0;
+
+          // Verificamos cada caractere da string
+          for (let i = 0; i < str.length; i++) {
+            // Se o caractere é 'A' ou 'a', incrementamos o contador
+            if (str[i].toLowerCase() === 'a') {
+              count++;
+            }
+          }
+
+          // Mostramos o resultado na tela
+          if (count > 0) {
+            document.getElementById('Resultado').innerText = `A letra 'A' ou 'a' aparece ${count} vezes na frase/palavra "${str}".`;
+          } else {
+            document.getElementById('Resultado').innerText = `A letra 'A' ou 'a' não aparece na frase/palavra "${str}".`;
+          }
+        }
+    </script>
+</body>
+</html>
