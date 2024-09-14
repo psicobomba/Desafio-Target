@@ -9,7 +9,7 @@ function isFibonacci(num) {
 
     let next = a + b;
 
-    // Aqui se cancula a sequencia de Fibonacci ate o primixo numero seja maior ou igual ao numero informado
+    // Aqui se calcula a sequencia de Fibonacci ate o que o primeiro numero seja maior ou igual ao numero informado
     while (next < num) {
         if (next === num) {
             return 'O numero ${num} pertence a sequencia de Fibonacci';
